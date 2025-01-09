@@ -1,0 +1,30 @@
+{
+  "name": "zklib-udp-nodejs",
+  "version": "1.3.5",
+  "description": "JavaScript module for ZKLib  biometric devices",
+  "main": "zklib.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IzhanDigiTechtic/zklib-udp-nodejs.git"
+  },
+  "keywords": [
+    "zkteco",
+    "zklib",
+    "node-zklib",
+    "attendance-device",
+    "attendance",
+    "biometrix-device"
+  ],
+  "author": "IzhanDigiTechtic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IzhanDigiTechtic/zklib-udp-nodejs/issues"
+  },
+  "homepage": "https://github.com/IzhanDigiTechtic/zklib-udp-nodejs#readme",
+  "dependencies": {
+    "zklib-js": "^1.0.0"
+  }
+}
