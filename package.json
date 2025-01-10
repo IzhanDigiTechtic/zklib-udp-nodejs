@@ -1,6 +1,6 @@
 {
   "name": "zklib-udp-nodejs",
-  "version": "1.3.7",
+  "version": "1.3.8",
   "description": "JavaScript module for ZKLib  biometric devices",
   "main": "zklib.js",
   "scripts": {

@@ -3,6 +3,7 @@ const {
   createUDPHeader,
   decodeUserData28,
   decodeRecordData16,
+  decodeUserData72,
   decodeRecordData40,
   decodeRecordRealTimeLog18,
   decodeUDPHeader,
