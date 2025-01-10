@@ -308,7 +308,6 @@ class ZKLibUDP {
 
 
   async getUsers() {
-
     // Free Buffer Data to request Data
     if (this.socket) {
       try {
@@ -318,10 +317,10 @@ class ZKLibUDP {
       }
     }
 
-
     let data = null
     try {
       data = await this.readWithBuffer(REQUEST_DATA.GET_USERS)
+ 
     } catch (err) {
       return Promise.reject(err)
     }
@@ -335,18 +334,22 @@ class ZKLibUDP {
       }
     }
 
-    const USER_PACKET_SIZE = 28
+
+    const USER_PACKET_SIZE = 72
+
     let userData = data.data.subarray(4)
+
     let users = []
 
     while (userData.length >= USER_PACKET_SIZE) {
       const user = decodeUserData72(userData.subarray(0, USER_PACKET_SIZE))
       users.push(user)
       userData = userData.subarray(USER_PACKET_SIZE)
+
+      
     }
-
-    return { data: users, err: data.err }
-
+    
+    return { data: users }
   }
 
 
