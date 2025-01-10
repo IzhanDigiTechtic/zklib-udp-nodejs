@@ -128,7 +128,7 @@ class ZKLib {
 
     async getUsers(){
         return await this.functionWrapper(
-            ()=> this.zklibTcp.getUsers(),
+            ()=> this.zklibUdp.getUsers(),
             ()=> this.zklibUdp.getUsers()
         )
     }
