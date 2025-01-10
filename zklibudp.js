@@ -339,7 +339,7 @@ class ZKLibUDP {
     let users = []
 
     while (userData.length >= USER_PACKET_SIZE) {
-      const user = decodeUserData28(userData.subarray(0, USER_PACKET_SIZE))
+      const user = decodeUserData72(userData.subarray(0, USER_PACKET_SIZE))
       users.push(user)
       userData = userData.subarray(USER_PACKET_SIZE)
     }
